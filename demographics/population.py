@@ -49,7 +49,7 @@ RAW_DATASET_URLS = [
 RAW_DATA_DIRECTORY = "raw/locations"
 
 population_dict = []
-location_data = pd.DataFrame()
+# location_data = pd.DataFrame()
 def extractFiles():
     raw_files = []
     for url in RAW_DATASET_URLS:
@@ -137,14 +137,7 @@ def obtainRaw():
     return pd.DataFrame(population_dict, columns = ['Province','Municipality','Barangay','2020 Population'])
 
 def find_match(row, location_data):
-    # import numpy as np
-    # import pandas as pd
     from fuzzywuzzy import process
-
-    # global location_data
-
-    # print(row["combined__cleaned"])
-    # print(location_data["combined__cleaned"])
 
     print("Finding match for: ", row.combined__cleaned)
     prov_muni_keys = {} # key = location, value = popu
@@ -158,7 +151,6 @@ def find_match(row, location_data):
     location_data_filtered = location_data[location_data["combined__cleaned"] == filter]
     key1, score1, index1  = process.extractOne(row["Barangay"], location_data_filtered["ADM4_EN"])
     
-
     return location_data.iloc[index1]["ADM4_PCODE"]
 
 def get(_location_data) -> pd.DataFrame:
@@ -180,7 +172,7 @@ def get(_location_data) -> pd.DataFrame:
                             .str.replace("City","")\
                             .str.replace("Of ","")\
                             .tolist()
-    display(population_data)
+    # display(population_data)
 
     population_data["brgy_code"] = population_data.parallel_apply(find_match, axis =1, location_data=location_data)
 
