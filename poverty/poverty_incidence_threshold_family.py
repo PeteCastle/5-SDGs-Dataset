@@ -43,6 +43,14 @@ def get():
 
     poverty_incidence_threshold_family = poverty_incidence_threshold_family.drop(columns=irrelevant_columns)\
                                                     .rename(columns=rename_columns)
+    
+    poverty_incidence_threshold_family = poverty_incidence_threshold_family.melt(id_vars=["ADM2_CODE", "Geolocation"], var_name="Attribute Year", value_name="Value")
+    poverty_incidence_threshold_family["Year"] = poverty_incidence_threshold_family["Attribute Year"].str.split(" ").str[-1]
+    poverty_incidence_threshold_family["Attribute"] = poverty_incidence_threshold_family["Attribute Year"].str.split(" ").str[:-1].str.join(" ")
+    del poverty_incidence_threshold_family["Attribute Year"]
+    poverty_incidence_threshold_family = poverty_incidence_threshold_family.pivot_table(index=["ADM2_CODE", "Geolocation", "Attribute"], columns="Year", values="Value", aggfunc='sum').reset_index()
+
+
     poverty_incidence_threshold_family.to_csv(f"{FINAL_DATA_DIRECTORY}/poverty_incidence_threshold_family.csv", index=False)
 
     return poverty_incidence_threshold_family                              

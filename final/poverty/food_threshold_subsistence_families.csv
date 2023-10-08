@@ -1,88 +1,175 @@
-Geolocation,Per Capita Food Threshold 2015,Per Capita Food Threshold 2018,Per Capita Food Threshold 2021p,Subsistence Incidence 2015,Subsistence Incidence 2018,Subsistence Incidence 2021p,ADM2_CODE
-1st District,17589,20029,23028,0.9,0.5,0.0,PH133900000
-2nd District,17589,20029,23028,0.1,0.2,0.3,PH137600000
-3rd District,17589,20029,23028,0.5,0.5,0.2,PH137400000
-4th District,17589,20029,23028,0.5,0.0,0.4,PH137500000
-Abra,14870,16488,20475,5.3,4.4,3.4,PH140100000
-Apayao,16278,16155,17942,11.7,4.2,0.8,PH148100000
-Benguet,15707,16877,19049,0.3,1.2,0.7,PH141100000
-Ifugao,17550,18447,20504,15.4,1.1,1.1,PH142700000
-Kalinga,14824,16923,18220,11.8,1.5,1.1,PH143200000
-Mt. Province,17095,19466,21774,11.5,5.6,3.4,PH144400000
-Ilocos Norte,16414,18623,22128,0.3,0.1,0.0,PH012800000
-Ilocos Sur,16449,17240,22852,1.9,0.6,3.4,PH012900000
-La Union,15282,15651,19547,5.7,0.2,1.0,PH013300000
-Pangasinan,15892,19396,21848,3.8,1.5,3.8,PH015500000
-Batanes,21942,26184,25263,0.0,1.3,0.2,PH020900000
-Cagayan,14969,17322,19289,2.9,3.0,1.2,PH021500000
-Isabela,16292,17791,20516,1.5,3.0,4.0,PH023100000
-Nueva Vizcaya,16464,17353,17809,3.2,3.4,2.9,PH025000000
-Quirino,15085,16408,19470,4.7,1.5,0.9,PH025700000
-Aurora,15827,17552,20417,11.7,2.5,4.8,PH037700000
-Bataan,15703,20705,21528,0.0,1.4,1.9,PH030800000
-Bulacan,14797,18921,24275,0.7,0.6,1.6,PH031400000
-Nueva Ecija,16071,17737,20363,3.9,0.8,1.6,PH034900000
-Pampanga,15526,18355,23795,0.1,0.2,0.4,PH035400000
-Tarlac,15550,17729,20649,3.4,1.3,1.6,PH036900000
-Zambales,18759,20888,23960,3.9,3.4,4.5,PH037100000
-Batangas,20996,23245,21395,5.8,1.1,0.6,PH041000000
-Cavite,19202,20392,24884,1.5,0.9,1.5,PH042100000
-Laguna,14823,16894,20669,0.8,0.2,1.5,PH043400000
-Quezon,14593,15914,18945,5.4,2.6,4.7,PH045600000
-Rizal,17676,20004,21902,0.7,0.7,0.6,PH045800000
-Marinduque,13932,16788,19392,1.9,2.6,3.1,PH174000000
-Occidental Mindoro,13951,14923,18609,15.8,5.2,9.5,PH175100000
-Oriental Mindoro,14193,16922,18371,6.8,1.9,5.4,PH175200000
-Palawan,13740,16308,16788,2.2,1.8,2.0,PH175300000
-Romblon,15253,16794,20122,6.3,5.0,9.6,PH175900000
-Albay,15618,17391,19083,6.6,3.2,4.0,PH050500000
-Camarines Norte,16702,17512,19217,12.2,5.2,3.7,PH051600000
-Camarines Sur,15984,16926,19998,7.4,5.3,10.5,PH051700000
-Catanduanes,15131,17035,19569,13.0,3.5,4.1,PH052000000
-Masbate,14250,15985,17828,10.8,5.3,5.9,PH054100000
-Sorsogon,16245,18172,18931,16.3,4.4,5.4,PH056200000
-Aklan,15491,16539,18752,0.6,1.1,4.1,PH060400000
-Antique,14432,16820,18604,4.5,3.1,5.8,PH060600000
-Capiz,14455,15798,18747,1.3,0.2,0.8,PH061900000
-Guimaras,16289,18054,19431,0.0,0.8,0.8,PH067900000
-Iloilo,15963,18203,19443,5.7,2.2,4.0,PH063000000
-Negros Occidental,15025,16541,18685,7.7,4.0,3.7,PH064500000
-Bohol,15769,18245,18743,10.5,2.9,6.2,PH071200000
-Cebu,16083,17959,23400,8.2,2.5,8.6,PH072200000
-Negros Oriental,15400,17548,18184,16.6,7.2,8.0,PH074600000
-Siquijor,15145,17895,17847,20.6,1.9,0.0,PH076100000
-Biliran,14924,16868,20331,5.3,2.2,6.6,PH087800000
-Eastern Samar,17708,20299,20192,23.6,16.5,12.1,PH082600000
-Leyte,14954,16456,18538,7.5,5.9,6.8,PH083700000
-Northern Samar,15883,18090,18569,29.6,7.2,3.7,PH084800000
-Southern Leyte,16731,17984,20114,14.8,3.7,3.9,PH086400000
-Samar,14878,16131,17620,18.0,6.7,9.3,PH086000000
-Zamboanga del Norte,16964,19857,23572,24.9,16.1,18.5,PH097200000
-Zamboanga del Sur,14173,16608,16731,5.7,4.5,4.0,PH097300000
-Zamboanga Sibugay,14869,16088,17260,4.5,8.2,8.3,PH098300000
-Isabela City,15899,18067,16723,5.4,13.1,2.3,PH099700000
-Bukidnon,16730,17874,20359,27.0,5.6,8.3,PH101300000
-Camiguin,16631,18151,19981,10.1,3.8,3.8,PH101800000
-Lanao del Norte,15638,17062,19916,19.0,3.9,9.7,PH103500000
-Misamis Occidental,15487,17092,21046,11.4,4.2,4.0,PH104200000
-Misamis Oriental,15385,16835,19650,5.1,2.3,3.2,PH104300000
-Davao del Norte,16659,19031,19095,8.3,2.2,2.0,PH112300000
-Davao del Sur,16099,18036,20785,5.6,2.2,1.8,PH112400000
-Davao Oriental,16001,18319,19302,5.5,7.6,4.9,PH112500000
-Davao de Oro,15483,18066,18360,3.6,5.1,4.6,PH118200000
-Davao Occidental,..,17642,19909,..,8.5,13.1,PH118600000
-Cotabato,14816,17507,19234,20.0,8.8,8.8,PH124700000
-Sarangani,13970,16295,16824,25.2,17.3,14.1,PH128000000
-South Cotabato,14884,17629,17010,7.4,4.2,4.3,PH126300000
-Sultan Kudarat,14816,16576,17633,25.2,9.4,9.1,PH126500000
-Cotabato City,17854,21152,23665,15.2,10.3,11.4,PH129800000
-Agusan del Norte,14377,16538,19375,9.9,5.7,8.3,PH160200000
-Agusan del Sur,16098,17187,19399,17.1,9.6,12.4,PH160300000
-Surigao Del Norte,17198,19741,18445,12.0,8.0,7.2,PH166700000
-Surigao Del Sur,15913,17334,18358,11.5,5.4,7.5,PH166800000
-Dinagat Islands,16939,18418,20772,12.2,7.6,8.9,PH168500000
-Basilan,15009,18818,18648,8.5,34.1,16.3,PH150700000
-Lanao del Sur,17041,20396,20379,40.7,31.0,0.3,PH153600000
-Maguindanao,14276,17739,17710,18.5,15.1,8.3,PH153800000
-Sulu,16205,20340,22224,14.2,31.5,17.1,PH156600000
-Tawi-tawi,12289,15028,18399,0.5,2.0,6.4,PH157000000
+ADM2_CODE,Geolocation,Attribute,2015,2018,2021p
+PH012800000,Ilocos Norte,Per Capita Food Threshold,16414,18623,22128
+PH012800000,Ilocos Norte,Subsistence Incidence,0.3,0.1,0.0
+PH012900000,Ilocos Sur,Per Capita Food Threshold,16449,17240,22852
+PH012900000,Ilocos Sur,Subsistence Incidence,1.9,0.6,3.4
+PH013300000,La Union,Per Capita Food Threshold,15282,15651,19547
+PH013300000,La Union,Subsistence Incidence,5.7,0.2,1.0
+PH015500000,Pangasinan,Per Capita Food Threshold,15892,19396,21848
+PH015500000,Pangasinan,Subsistence Incidence,3.8,1.5,3.8
+PH020900000,Batanes,Per Capita Food Threshold,21942,26184,25263
+PH020900000,Batanes,Subsistence Incidence,0.0,1.3,0.2
+PH021500000,Cagayan,Per Capita Food Threshold,14969,17322,19289
+PH021500000,Cagayan,Subsistence Incidence,2.9,3.0,1.2
+PH023100000,Isabela,Per Capita Food Threshold,16292,17791,20516
+PH023100000,Isabela,Subsistence Incidence,1.5,3.0,4.0
+PH025000000,Nueva Vizcaya,Per Capita Food Threshold,16464,17353,17809
+PH025000000,Nueva Vizcaya,Subsistence Incidence,3.2,3.4,2.9
+PH025700000,Quirino,Per Capita Food Threshold,15085,16408,19470
+PH025700000,Quirino,Subsistence Incidence,4.7,1.5,0.9
+PH030800000,Bataan,Per Capita Food Threshold,15703,20705,21528
+PH030800000,Bataan,Subsistence Incidence,0.0,1.4,1.9
+PH031400000,Bulacan,Per Capita Food Threshold,14797,18921,24275
+PH031400000,Bulacan,Subsistence Incidence,0.7,0.6,1.6
+PH034900000,Nueva Ecija,Per Capita Food Threshold,16071,17737,20363
+PH034900000,Nueva Ecija,Subsistence Incidence,3.9,0.8,1.6
+PH035400000,Pampanga,Per Capita Food Threshold,15526,18355,23795
+PH035400000,Pampanga,Subsistence Incidence,0.1,0.2,0.4
+PH036900000,Tarlac,Per Capita Food Threshold,15550,17729,20649
+PH036900000,Tarlac,Subsistence Incidence,3.4,1.3,1.6
+PH037100000,Zambales,Per Capita Food Threshold,18759,20888,23960
+PH037100000,Zambales,Subsistence Incidence,3.9,3.4,4.5
+PH037700000,Aurora,Per Capita Food Threshold,15827,17552,20417
+PH037700000,Aurora,Subsistence Incidence,11.7,2.5,4.8
+PH041000000,Batangas,Per Capita Food Threshold,20996,23245,21395
+PH041000000,Batangas,Subsistence Incidence,5.8,1.1,0.6
+PH042100000,Cavite,Per Capita Food Threshold,19202,20392,24884
+PH042100000,Cavite,Subsistence Incidence,1.5,0.9,1.5
+PH043400000,Laguna,Per Capita Food Threshold,14823,16894,20669
+PH043400000,Laguna,Subsistence Incidence,0.8,0.2,1.5
+PH045600000,Quezon,Per Capita Food Threshold,14593,15914,18945
+PH045600000,Quezon,Subsistence Incidence,5.4,2.6,4.7
+PH045800000,Rizal,Per Capita Food Threshold,17676,20004,21902
+PH045800000,Rizal,Subsistence Incidence,0.7,0.7,0.6
+PH050500000,Albay,Per Capita Food Threshold,15618,17391,19083
+PH050500000,Albay,Subsistence Incidence,6.6,3.2,4.0
+PH051600000,Camarines Norte,Per Capita Food Threshold,16702,17512,19217
+PH051600000,Camarines Norte,Subsistence Incidence,12.2,5.2,3.7
+PH051700000,Camarines Sur,Per Capita Food Threshold,15984,16926,19998
+PH051700000,Camarines Sur,Subsistence Incidence,7.4,5.3,10.5
+PH052000000,Catanduanes,Per Capita Food Threshold,15131,17035,19569
+PH052000000,Catanduanes,Subsistence Incidence,13.0,3.5,4.1
+PH054100000,Masbate,Per Capita Food Threshold,14250,15985,17828
+PH054100000,Masbate,Subsistence Incidence,10.8,5.3,5.9
+PH056200000,Sorsogon,Per Capita Food Threshold,16245,18172,18931
+PH056200000,Sorsogon,Subsistence Incidence,16.3,4.4,5.4
+PH060400000,Aklan,Per Capita Food Threshold,15491,16539,18752
+PH060400000,Aklan,Subsistence Incidence,0.6,1.1,4.1
+PH060600000,Antique,Per Capita Food Threshold,14432,16820,18604
+PH060600000,Antique,Subsistence Incidence,4.5,3.1,5.8
+PH061900000,Capiz,Per Capita Food Threshold,14455,15798,18747
+PH061900000,Capiz,Subsistence Incidence,1.3,0.2,0.8
+PH063000000,Iloilo,Per Capita Food Threshold,15963,18203,19443
+PH063000000,Iloilo,Subsistence Incidence,5.7,2.2,4.0
+PH064500000,Negros Occidental,Per Capita Food Threshold,15025,16541,18685
+PH064500000,Negros Occidental,Subsistence Incidence,7.7,4.0,3.7
+PH067900000,Guimaras,Per Capita Food Threshold,16289,18054,19431
+PH067900000,Guimaras,Subsistence Incidence,0.0,0.8,0.8
+PH071200000,Bohol,Per Capita Food Threshold,15769,18245,18743
+PH071200000,Bohol,Subsistence Incidence,10.5,2.9,6.2
+PH072200000,Cebu,Per Capita Food Threshold,16083,17959,23400
+PH072200000,Cebu,Subsistence Incidence,8.2,2.5,8.6
+PH074600000,Negros Oriental,Per Capita Food Threshold,15400,17548,18184
+PH074600000,Negros Oriental,Subsistence Incidence,16.6,7.2,8.0
+PH076100000,Siquijor,Per Capita Food Threshold,15145,17895,17847
+PH076100000,Siquijor,Subsistence Incidence,20.6,1.9,0.0
+PH082600000,Eastern Samar,Per Capita Food Threshold,17708,20299,20192
+PH082600000,Eastern Samar,Subsistence Incidence,23.6,16.5,12.1
+PH083700000,Leyte,Per Capita Food Threshold,14954,16456,18538
+PH083700000,Leyte,Subsistence Incidence,7.5,5.9,6.8
+PH084800000,Northern Samar,Per Capita Food Threshold,15883,18090,18569
+PH084800000,Northern Samar,Subsistence Incidence,29.6,7.2,3.7
+PH086000000,Samar,Per Capita Food Threshold,14878,16131,17620
+PH086000000,Samar,Subsistence Incidence,18.0,6.7,9.3
+PH086400000,Southern Leyte,Per Capita Food Threshold,16731,17984,20114
+PH086400000,Southern Leyte,Subsistence Incidence,14.8,3.7,3.9
+PH087800000,Biliran,Per Capita Food Threshold,14924,16868,20331
+PH087800000,Biliran,Subsistence Incidence,5.3,2.2,6.6
+PH097200000,Zamboanga del Norte,Per Capita Food Threshold,16964,19857,23572
+PH097200000,Zamboanga del Norte,Subsistence Incidence,24.9,16.1,18.5
+PH097300000,Zamboanga del Sur,Per Capita Food Threshold,14173,16608,16731
+PH097300000,Zamboanga del Sur,Subsistence Incidence,5.7,4.5,4.0
+PH098300000,Zamboanga Sibugay,Per Capita Food Threshold,14869,16088,17260
+PH098300000,Zamboanga Sibugay,Subsistence Incidence,4.5,8.2,8.3
+PH099700000,Isabela City,Per Capita Food Threshold,15899,18067,16723
+PH099700000,Isabela City,Subsistence Incidence,5.4,13.1,2.3
+PH101300000,Bukidnon,Per Capita Food Threshold,16730,17874,20359
+PH101300000,Bukidnon,Subsistence Incidence,27.0,5.6,8.3
+PH101800000,Camiguin,Per Capita Food Threshold,16631,18151,19981
+PH101800000,Camiguin,Subsistence Incidence,10.1,3.8,3.8
+PH103500000,Lanao del Norte,Per Capita Food Threshold,15638,17062,19916
+PH103500000,Lanao del Norte,Subsistence Incidence,19.0,3.9,9.7
+PH104200000,Misamis Occidental,Per Capita Food Threshold,15487,17092,21046
+PH104200000,Misamis Occidental,Subsistence Incidence,11.4,4.2,4.0
+PH104300000,Misamis Oriental,Per Capita Food Threshold,15385,16835,19650
+PH104300000,Misamis Oriental,Subsistence Incidence,5.1,2.3,3.2
+PH112300000,Davao del Norte,Per Capita Food Threshold,16659,19031,19095
+PH112300000,Davao del Norte,Subsistence Incidence,8.3,2.2,2.0
+PH112400000,Davao del Sur,Per Capita Food Threshold,16099,18036,20785
+PH112400000,Davao del Sur,Subsistence Incidence,5.6,2.2,1.8
+PH112500000,Davao Oriental,Per Capita Food Threshold,16001,18319,19302
+PH112500000,Davao Oriental,Subsistence Incidence,5.5,7.6,4.9
+PH118200000,Davao de Oro,Per Capita Food Threshold,15483,18066,18360
+PH118200000,Davao de Oro,Subsistence Incidence,3.6,5.1,4.6
+PH118600000,Davao Occidental,Per Capita Food Threshold,..,17642,19909
+PH118600000,Davao Occidental,Subsistence Incidence,..,8.5,13.1
+PH124700000,Cotabato,Per Capita Food Threshold,14816,17507,19234
+PH124700000,Cotabato,Subsistence Incidence,20.0,8.8,8.8
+PH126300000,South Cotabato,Per Capita Food Threshold,14884,17629,17010
+PH126300000,South Cotabato,Subsistence Incidence,7.4,4.2,4.3
+PH126500000,Sultan Kudarat,Per Capita Food Threshold,14816,16576,17633
+PH126500000,Sultan Kudarat,Subsistence Incidence,25.2,9.4,9.1
+PH128000000,Sarangani,Per Capita Food Threshold,13970,16295,16824
+PH128000000,Sarangani,Subsistence Incidence,25.2,17.3,14.1
+PH129800000,Cotabato City,Per Capita Food Threshold,17854,21152,23665
+PH129800000,Cotabato City,Subsistence Incidence,15.2,10.3,11.4
+PH133900000,1st District,Per Capita Food Threshold,17589,20029,23028
+PH133900000,1st District,Subsistence Incidence,0.9,0.5,0.0
+PH137400000,3rd District,Per Capita Food Threshold,17589,20029,23028
+PH137400000,3rd District,Subsistence Incidence,0.5,0.5,0.2
+PH137500000,4th District,Per Capita Food Threshold,17589,20029,23028
+PH137500000,4th District,Subsistence Incidence,0.5,0.0,0.4
+PH137600000,2nd District,Per Capita Food Threshold,17589,20029,23028
+PH137600000,2nd District,Subsistence Incidence,0.1,0.2,0.3
+PH140100000,Abra,Per Capita Food Threshold,14870,16488,20475
+PH140100000,Abra,Subsistence Incidence,5.3,4.4,3.4
+PH141100000,Benguet,Per Capita Food Threshold,15707,16877,19049
+PH141100000,Benguet,Subsistence Incidence,0.3,1.2,0.7
+PH142700000,Ifugao,Per Capita Food Threshold,17550,18447,20504
+PH142700000,Ifugao,Subsistence Incidence,15.4,1.1,1.1
+PH143200000,Kalinga,Per Capita Food Threshold,14824,16923,18220
+PH143200000,Kalinga,Subsistence Incidence,11.8,1.5,1.1
+PH144400000,Mt. Province,Per Capita Food Threshold,17095,19466,21774
+PH144400000,Mt. Province,Subsistence Incidence,11.5,5.6,3.4
+PH148100000,Apayao,Per Capita Food Threshold,16278,16155,17942
+PH148100000,Apayao,Subsistence Incidence,11.7,4.2,0.8
+PH150700000,Basilan,Per Capita Food Threshold,15009,18818,18648
+PH150700000,Basilan,Subsistence Incidence,8.5,34.1,16.3
+PH153600000,Lanao del Sur,Per Capita Food Threshold,17041,20396,20379
+PH153600000,Lanao del Sur,Subsistence Incidence,40.7,31.0,0.3
+PH153800000,Maguindanao,Per Capita Food Threshold,14276,17739,17710
+PH153800000,Maguindanao,Subsistence Incidence,18.5,15.1,8.3
+PH156600000,Sulu,Per Capita Food Threshold,16205,20340,22224
+PH156600000,Sulu,Subsistence Incidence,14.2,31.5,17.1
+PH157000000,Tawi-tawi,Per Capita Food Threshold,12289,15028,18399
+PH157000000,Tawi-tawi,Subsistence Incidence,0.5,2.0,6.4
+PH160200000,Agusan del Norte,Per Capita Food Threshold,14377,16538,19375
+PH160200000,Agusan del Norte,Subsistence Incidence,9.9,5.7,8.3
+PH160300000,Agusan del Sur,Per Capita Food Threshold,16098,17187,19399
+PH160300000,Agusan del Sur,Subsistence Incidence,17.1,9.6,12.4
+PH166700000,Surigao Del Norte,Per Capita Food Threshold,17198,19741,18445
+PH166700000,Surigao Del Norte,Subsistence Incidence,12.0,8.0,7.2
+PH166800000,Surigao Del Sur,Per Capita Food Threshold,15913,17334,18358
+PH166800000,Surigao Del Sur,Subsistence Incidence,11.5,5.4,7.5
+PH168500000,Dinagat Islands,Per Capita Food Threshold,16939,18418,20772
+PH168500000,Dinagat Islands,Subsistence Incidence,12.2,7.6,8.9
+PH174000000,Marinduque,Per Capita Food Threshold,13932,16788,19392
+PH174000000,Marinduque,Subsistence Incidence,1.9,2.6,3.1
+PH175100000,Occidental Mindoro,Per Capita Food Threshold,13951,14923,18609
+PH175100000,Occidental Mindoro,Subsistence Incidence,15.8,5.2,9.5
+PH175200000,Oriental Mindoro,Per Capita Food Threshold,14193,16922,18371
+PH175200000,Oriental Mindoro,Subsistence Incidence,6.8,1.9,5.4
+PH175300000,Palawan,Per Capita Food Threshold,13740,16308,16788
+PH175300000,Palawan,Subsistence Incidence,2.2,1.8,2.0
+PH175900000,Romblon,Per Capita Food Threshold,15253,16794,20122
+PH175900000,Romblon,Subsistence Incidence,6.3,5.0,9.6

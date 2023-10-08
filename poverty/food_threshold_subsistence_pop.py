@@ -47,6 +47,14 @@ def get():
 
     food_threshold_subsistence_pop = food_threshold_subsistence_pop.drop(columns=irrelevant_columns)\
                                                     .rename(columns=rename_columns)
+    
+    
+    food_threshold_subsistence_pop = food_threshold_subsistence_pop.melt(id_vars=["ADM2_CODE", "Geolocation"], var_name="Attribute Year", value_name="Value")
+    food_threshold_subsistence_pop["Year"] = food_threshold_subsistence_pop["Attribute Year"].str.split(" ").str[-1]
+    food_threshold_subsistence_pop["Attribute"] = food_threshold_subsistence_pop["Attribute Year"].str.split(" ").str[:-1].str.join(" ")
+    del food_threshold_subsistence_pop["Attribute Year"]
+    food_threshold_subsistence_pop = food_threshold_subsistence_pop.pivot_table(index=["ADM2_CODE", "Geolocation", "Attribute"], columns="Year", values="Value", aggfunc='sum').reset_index()
+
 
     food_threshold_subsistence_pop.to_csv(f"{FINAL_DATA_DIRECTORY}/food_threshold_subsistence_pop.csv", index=False)
 

@@ -129,6 +129,7 @@ def get(location_data):
 
     languages = pd.read_csv(f"{RAW_DATA_DIRECTORY}/ph_lang_admin2_v01.csv",encoding='latin-1', skiprows=[1])
     languages_unpivot = pd.melt(languages, id_vars = ["admin2_name","admin2_pcode"], value_vars = LANGUAGES_LIST, var_name="Language", value_name="percent_share")
+    
 
     languages_top = languages_unpivot.groupby(["admin2_name","admin2_pcode"]).apply(lambda agg: pd.Series({
         ("primary_language"):n_largest_lang(agg,1),
@@ -142,6 +143,12 @@ def get(location_data):
     languages_combined = languages_top\
                         .merge(languages[["admin2_name","literacy_all","literacy_male","literacy_female"]], on="admin2_name", how="left")\
                         .drop("admin2_pcode", axis=1)
+    languages_combined = languages_combined.melt(id_vars=["admin2_name"], var_name="Attribute", value_name="Value")
+    
+    languages_unpivot["Attribute"] = languages_unpivot["Language"] + "_Lang_Percent_Share"
+    languages_unpivot.drop(["admin2_pcode","Language"], axis=1, inplace=True)
+    languages_unpivot.rename(columns={"percent_share":"Value"}, inplace=True)
 
-    languages_combined.to_csv(f'{FINAL_DATA_DIRECTORY}/languages_combined.csv', index=False)
-    return languages_combined
+    language = pd.concat([languages_unpivot, languages_combined])
+    language.to_csv(f'{FINAL_DATA_DIRECTORY}/languages.csv', index=False)
+    return language

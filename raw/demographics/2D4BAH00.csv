@@ -1,17 +1,6 @@
 "Summary Statistics for Transportation and Storage Establishments by Geolocation, Industry Description, Year and Data Items"
 
 "Geolocation","Industry Description","2019 Number of Establishments","2019 Total Employment a/","2019 Paid Employees a/","2019 Workers on Sub-Contract Agreement  or Under Manpower Agencies/Contractors a/","2019 Total Revenue","2019 Total  Expense","2019 Compensation","2019 Other Expense","2019 Value Added","2019 Gross Additions  to Tangible Fixed Assets","2019 Change  in Inventories","2019 Sales from E-Commerce Transactions","2019 Subsidies"
-"Philippines","Transportation and Storage",3057,227723,226462,26692,747154718,704890429,86881119,618009310,256067604,68919209,576912,81104533,12407670
-"Philippines","..Transport via railways",s,s,s,s,s,s,s,s,s,s,s,s,s
-"Philippines","..Transport via buses",246,24938,24622,1252,19579775,18194746,4459250,13735496,8085433,4095807,141513,-,-
-"Philippines","..Other land transport",884,30304,30150,10405,39732068,32906516,6043968,26862548,16766152,6264959,-5753,-,-
-"Philippines","..Sea and coastal water transport",158,19007,18747,221,45010298,43123756,5249663,37874093,14989248,3246975,-48904,-,-
-"Philippines","..Inland water transport",36,952,951,-,762195,672466,146358,526108,345810,52799,-10315,-,-
-"Philippines","..Passenger air transport",29,17516,17516,38,375013642,382153916,29686566,352467350,93202706,40146236,1244201,80958283,-
-"Philippines","..Freight air transport",s,s,s,s,s,s,s,s,s,s,s,s,s
-"Philippines","..Warehousing and storage",221,17721,17651,9626,22698028,18384056,4319223,14064833,11945391,1974817,-8408,-,-
-"Philippines","..Support activities for transportation",1367,96881,96425,3269,212930391,170111107,30653915,139457192,106774826,10465190,-737145,146250,297655
-"Philippines","..Courier activities",110,17459,17453,1546,26934900,24865479,5312438,19553041,8906877,1908729,-33,-,-
 "..National Capital Region","Transportation and Storage",1671,137082,136599,19314,605058095,585682499,67114032,518568467,196845749,51587431,973337,81036534,12110015
 "..National Capital Region","..Transport via railways",s,s,s,s,s,s,s,s,s,s,s,s,s
 "..National Capital Region","..Transport via buses",75,6058,5952,11,2335973,2255531,968206,1287325,1237258,262589,92555,-,-
