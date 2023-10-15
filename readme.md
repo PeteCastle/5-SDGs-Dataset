@@ -1,36 +1,62 @@
-# Hospitality and Location Dataset
-*SP702 - Python for Data Engineering (Final Project)*
-Project SPARTA - Development Academy of the Philippines
-![](resources/images/2023-08-26-18-56-06.png)
+# 5-SDGs Dataset
 
-**TO MY FELLOW SPARTA CLASSMATES:**
-- All CSV files are saved under **final_data** folder.
-- Running the python scripts will take a while depending on the amount of data input.  
-- For task 5, Google Chrome will appear as you run the script.  Do not close the browser until the script is finished.
-- If you need assistance in running the script, feel free to DM me.
+![](resources/images/2023-10-15-00-19-55.png)
 
-This ETL project extracts and transforms hospitality and location data from various sources. 
+The **Sustainable Development Goals (SDGs)** established by the United Nations are a plan aimed at promoting peace and prosperity. These 17 interconnected goals were unanimously adopted by all member states in 2015 as part of the 2030 agenda, for development. It is crucial to acknowledge their significance within society. The SDGs provide a framework that transcends borders encouraging collaboration among countries organizations and individuals to address pressing challenges. By prioritizing collaboration, inclusivity, and sustainability the SDGs strive to improve the well-being of both people and the planet while ensuring that no one is left behind.
+
+Objectives:
+- Develop a comprehensive '5-SDGs Dataset' by aggregating, transforming, and loading data from multiple sources.
+- The dataset should encompass a wide range of socio-economic, disaster resilience, poverty, demographics, and technology-related attributes from various CSV files, such as agricultural wage rates, external debt, disaster risk reduction and management (DRRM) indicators, poverty statistics, demographics (population, language, etc.), and technology adoption statistics.
+- Ensure that the dataset contributes to the development of 5 United Nations sustainable development goals – No Poverty, Decent Work and Economic Growth, Sustainable Cities and Communities, Climate Action, and Peace, Justice, and Strong Institutions. 
+- The result should be user-friendly and conform to dimensional normal form.
 
 ## Data Sources
-1. TripAdvisor (https://www.tripadvisor.com.ph)
-2. RapidAPI's TripAdvisor Endpoint (https://rapidapi.com/apidojo/api/travel-advisor)
-3. Philippine Statistics Authority OpenStat (https://openstat.psa.gov.ph/)
-4. Humanitarian Data Exchange by United Nations Population Fund (https://data.humdata.org/)
+**OpenSTAT** is a public dataset serviced under the Philippine Statistics authority.  It offers multiple data under different domains including bot not limited to demographics, economics, environment, etc.  Most of raw datasets in this project comes in this website.
 
-## For Tasks 1-4
-*Hotel, Tourist Sites, and Hotel Data*
-This extensive dataset covers aspects of the hospitality industry, in the Philippines. It consists of reviews from hotels over the country giving feedback on accommodations. Moreover, it includes reviews of tourist sites providing insights into visitor experiences well as restaurant reviews that offer a glimpse into dining experiences. With information such as entity names, ratings, review content and visit dates this dataset presents a view of customer sentiments and preferences within the vibrant hospitality landscape of the Philippines. Whether it’s about accommodations, attractions, or dining options this data enables an analysis of customer satisfaction and trends, in this Southeast Asian destination.
+Some datasets collected by the **Humanitarian Data Exchange** were used in this project, commonly datasets that are partially cleaned and aggregated from OpenSTAT’s website.
 
-### How did I extract the data?
-1. The GeoID of the location is obatined using the **RapidAPI's TripAdvisor Endpoint**. The GeoID is used to get the data from the TripAdvisor website.
-2. The GeoID is referenced in the TripAdvisor website, returning the URLs of hotel, restaurants, and attractions in the location.
-3. The list of hotels and detail of each hotel is obtained from the TripAdvisor website.
-4. **BeautifulSoup** library to is used to extract the data hotel page.
+## Extract
+All CSV files were downloaded from their respective sources.  For OpenSTAT files, I’ve only selected geographical locations of the lowest degree available to ensure the high granularity of the dataset.  For the complete list of datasets, their attributes and granularity, refer to Table 2: List of Source Datasets and its Attributes
 
-## For Task 5
-*Location Data*
-This dataset provides a collection of information that reflects the landscape of the Philippines. It includes data, on geography, language, economy, and society. From details like barangays, municipalities, provinces and regions to information and literacy rates this dataset captures the cultural and social fabric of the country. Moreover, it explores aspects by including indicators such, as Gross Regional Domestic Product (GRDP) Consumer Price Index (CPI) and transportation statistics. This combination of data does not allow for an understanding of the Philippines but also facilitates informed analysis of language distribution, economic trends, literacy levels and transportation networks. Overall, it offers a depiction of the dynamics shaping the nation.
+## Transform
+**General Transformation Rule**
 
-The data is obtained from the **Philippine Statistics Authority OpenStat** website.  There are multiple datasets that can be downloaded from the website.  I only selected the datasets that are aggregated into any geographical level (i.e. region, province, municipality, barangay).  Selected files are transformed and joined.
+To maintain a consistent and organized format for data transformation, the following rules were applied to all dimensions using Pandas DataFrame.
+- The granularity should be one row per geographical location (could be national, regional, provincial, municipal, or barangay level).
+- Each row should correspond to one attribute.  Therefore, one metric per row.
+- To facilitate the observation of data changes over time, each column is associated with a specific year. It is important to note that not all columns may contain values; however, a single column should have a value associated with it for each row.
+  
+**Population Data**
 
-![](resources/images/2023-08-26-19-05-32.png)
+As the dataset is not consistent with the location dataset, I’ve used similarity index to create a mapping between two datasets.  In turn, join performance has decreased significantly.
+All of these datasets are placed in the database as a staging table.
+
+**Normalized Model**
+
+In transforming the cleaned and consistent models into a normalized model, all datasets were appended or combined to a single domain table.  In tables where the attribute is not specified, the table name is used as the attribute in the domain table.
+
+Then, all attributes were transferred to another dimension entitled “AttributeDim”.  Attributes within dimensions are now foreign keys in the attribute dimensions. 
+
+The location data has been aggregated where administrative names of multiple levels have been combined into one column to make it compatible with object-relational model.  Like attribute dimensions, all geolocations within dimensions are now foreign keys in the location dimension.
+
+All of these datasets are placed in the database as the dimension table.
+
+See Figure 3: Normalized Model on the next page for the normalized model.
+
+## Load
+All staging tables are now loaded in the SQLite database, ready for consumption of the end users.  
+
+**Dimensional Normal Form**
+
+The dimensional normal form of the dataset combines all fact values from dimension tables: demographics, DRRM, economic, poverty, and technology sector into a single huge fact table.
+
+The dimension follows mostly star schema, with all data acting as the fact table and the location, attribute, domain, and SDG tables acting as the dimension tables.
+
+The granularity remains the same.
+
+All individual attribute dimensions have also been combined into one table, with the addition of Industry column that is only used in technology dimension.
+
+![](resources/images/2023-10-15-00-16-03.png)
+
+## Normalized Model
+![](resources/images/2023-10-15-00-16-32.png)
